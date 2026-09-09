@@ -4,6 +4,8 @@ A small browser game about taking an unreasonable instruction literally. Fetch s
 
 ## Play
 
+[Play Boil the Ocean](https://boil-the-ocean-one.vercel.app)
+
 Click the ground to walk, or use WASD / arrow keys. Press **1** for the shore and **2** for the kettle station. Work starts when you arrive. Progress saves in your browser.
 
 ## Run locally

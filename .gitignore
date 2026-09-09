@@ -9,3 +9,5 @@ work/
 outputs/
 PROJECT.md
 decisions/
+.vercel
+.env*
