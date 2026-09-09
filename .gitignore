@@ -1,0 +1,11 @@
+node_modules/
+dist/
+work/
+.DS_Store
+.vercel/
+.env
+.env.*
+!.env.example
+outputs/
+PROJECT.md
+decisions/
