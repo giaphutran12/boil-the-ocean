@@ -24,7 +24,8 @@ export function renegotiate(game){
  game.cash-=deal.cost;game.sponsorLevel=(game.sponsorLevel||0)+1;return deal;
 }
 export const BOIL_SECONDS=8;
-export const HEAT_TARGET = 800000;
+// Ten final-kettle batches, rather than one hundred, can finish the ocean.
+export const HEAT_TARGET = 80000;
 export function createGame(){return {cash:0,litres:0,upgrades:[],phase:'empty',progress:0,batches:0,elapsed:0,won:false,activeKettle:0,kettles:[{phase:'empty',progress:0,waterLitres:0,pickupKind:'hot'}]};}
 export function capacity(game){return game.upgrades.includes('mega')?8000:game.upgrades.includes('station')?2400:game.upgrades.includes('barge')?800:game.upgrades.includes('generator')?240:game.upgrades.includes('boat')?80:game.upgrades.includes('big')?24:game.upgrades.includes('strip')?6:game.upgrades.includes('second')?2:1;}
 export function temperature(game){return 18+82*Math.min(1,game.litres/HEAT_TARGET);}
